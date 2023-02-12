@@ -2,8 +2,8 @@
 
 let employee={
 
-    name: 'ThanOs',
-    Device: 'Poco X4 5G',
+    Name: 'ThanOs',
+    Device: 'Poco X4 5G'
 
 }
 

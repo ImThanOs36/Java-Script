@@ -16,3 +16,8 @@ console.log(sum(3,5))
 let divide=a=> a/2;
 
 console.log(divide(21));
+
+setTimeout(() =>{
+
+    console.log("ello");
+},3000);

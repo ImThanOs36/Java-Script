@@ -3,9 +3,9 @@
 let greet= ()=> console.log("Hello");
 greet();
 
-let name="hey"
-let greeting=(name)=> console.log(name+" ,hey");
-greeting(name);
+// let name="hey"
+// let greeting=(name)=> console.log(name+" ,hey");
+// greeting(name);
 
 
 let object={
@@ -13,9 +13,11 @@ let object={
     name:["Hello","thanos"],
     speek(){
 
-        this.name.forEach(function (student){
-            console.log()
+        this.name.forEach((student)=>{
+            console.log(this.name+student)
         });
 
     }
 }
+
+object.speek()

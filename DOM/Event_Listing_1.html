@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Im Heading </h1>
+        <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit neque amet laudantium, quis maxime
+            praesentium quaerat eum, quae tempore, impedit consectetur optio fuga ea possimus est eos ad cupiditate!
+        </P>
+    </div>
+    <button id="btn" onclick=toggleHide()>Click me to hide containt</button>
+
+    <script>
+        function toggleHide() {
+
+            let container = document.getElementById('container');
+            
+            if (container.style.display != 'none') {
+                container.style.display = 'none';
+                let btn = document.getElementById('btn').innerHTML='Click me to Unhide containt'
+            }
+            else{
+                
+                container.style.display = 'block';
+                let btn = document.getElementById('btn').innerHTML='Click me to hide containt'
+            }
+        }
+
+    </script>
+</body>
+
+</html>

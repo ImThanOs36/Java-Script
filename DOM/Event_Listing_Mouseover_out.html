@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, aliquam esse voluptatem neque iste
+            exercitationem ut sed earum quidem itaque vitae! Fugiat distinctio minima nam exercitationem at iure debitis
+            dolores.</p>
+
+    </div>
+    <div class="main">
+        <h1>number of over :</h1><span id="span1"></span>
+        <h1>number of out :</h1><span id="span2"></span>
+        <button onclick="zero()">Clear Counts</button>
+    </div>
+    <script>
+        let p = document.getElementById('para');
+        let n1 = document.getElementById('span1');
+        let n2 = document.getElementById('span2');
+        let number_mouseover = 0;
+        let number_mouseout = 0;
+
+        p.addEventListener('mouseover', function run() {
+            number_mouseover = number_mouseover + 1;
+            document.getElementById('span1').innerHTML = number_mouseover;
+        });
+        p.addEventListener('mouseout', function run() {
+            number_mouseout = number_mouseout + 1;
+            document.getElementById('span2').innerHTML = number_mouseout;
+        });
+        function zero() {
+            let number_mouseover = 0;
+            let number_mouseout = 0;
+            document.getElementById('span1').innerHTML = number_mouseover;
+            document.getElementById('span2').innerHTML = number_mouseout;
+        }
+
+
+    </script>
+</body>
+
+</html>
